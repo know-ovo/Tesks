@@ -198,7 +198,7 @@ ID为static的元素的z-index属性值明显高于ID为relative的元素。同�
 ```
 正常定位的元素与相对定位的元素重叠，但相对定位的元素的z-index值小于0时的示例效果图：
 
-![4](D:\图片\Screenshots\屏幕截图 2023-11-24 105121.png)
+![4](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105121.png?raw=true)
 
 将ID为relative的元素的z-index属性值修改负数后，在z轴ID为static的元素比ID为relative的元素更靠近用户,结合ID为relative的元素的z-index属性值为正数的情况，得出position属性值为static时，元素的z-index是不会受到设置值影响的2。
 
