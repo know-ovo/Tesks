@@ -73,7 +73,7 @@ static(正常定位) 是元素position属性的默认值，包含此属性的元
 ```
 元素正常定位未添加top、right、bottom、left属性的示例效果图：
 在这里插入图片描述
-![1](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 104415.png)
+![1](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20104415.png?raw=true)
 
 元素正常定位且添加top、right、bottom、left属性的示例html代码：
 ```
@@ -105,7 +105,7 @@ static(正常定位) 是元素position属性的默认值，包含此属性的元
 </html>
 ```
 元素正常定位且添加top、right、bottom、left属性的示例效果图：
-![2](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 104801.png)
+![2](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20104801.png?raw=true)
 元素正常定位下，无论有无添加top、right、bottom、left属性，红色背景的div元素相对于body元素的边框都没有任何的位置变化，由此可以说明当元素的position属性值为static时，元素的top、right、bottom、left属性值不会生效。
 
 正常定位的元素与相对定位的元素重叠的示例html代码：
@@ -148,7 +148,7 @@ static(正常定位) 是元素position属性的默认值，包含此属性的元
 </html>
 ```
 正常定位的元素与相对定位的元素重叠的示例效果图：
-![3](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 104912.png)
+![3](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20104912.png?raw=true)
 ID为static的元素的z-index属性值明显高于ID为relative的元素。同理，在z轴，ID为static的元素应该比ID为relative的元素更靠近用户，事实上却是ID为relative的元素更靠近用户。
 
 正常定位的元素与相对定位的元素重叠，但相对定位的元素的z-index值小于0时的示例html代码：
@@ -201,7 +201,7 @@ postion属性值为relative(相对定位) 的元素在不设置top、right、bot
 在上文中阐述static时用到的ID为relative的元素用的就是相对定位，从其对应的效果图可以看出，虽然元素中含有值为-100px的top属性，将元素显示的位置相对于自身在常规流中的位置往上移动了100像素，但其自身在常规流中的位置仍然保留。
 
 ID为relative的元素在常规流中的位置仍然保留的示例效果图：
-![5](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105013.png)
+![5](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105013.png?raw=true)
 
 相对定位的示例html代码：
 ```
@@ -245,7 +245,7 @@ ID为relative的元素在常规流中的位置仍然保留的示例效果图：
 </html>
 ```
 相对定位的示例效果图：
-![6](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105323.png)
+![6](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105323.png?raw=true)
 这里三个元素盒子都是用的相对定位：红色盒子因为没有设置top、right、bottom、left属性，其定位在自身在常规流中的位置；黑色盒子因为包含值均为100px的top和left两属性，所以其定位在相对于自身在常规流先靠下100像素，再靠右100像素的位置上；灰色盒子和红色盒子一样，没有设置top、right、bottom、left属性，但因黑色盒子在常规流中的位置仍然保留，所以灰色盒子所占位置并没有紧靠在红色盒子的下方，而是出现在距离红色盒子底部100像素的位置上。
 
 ## absolute（绝对定位）
@@ -288,7 +288,7 @@ absolute（绝对定位）与relative（相对定位）之间的区别是：rela
 </html>
 ```
 绝对定位脱离常规流的示例效果图：
-1[7](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105451.png)
+1[7](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105451.png?raw=true)
 从效果图中可以看出，添加了position属性值为absolute的块级元素并没有按预期独占一行，且同样添加了position属性值为absolute的行内元素也并没有按预期在每行中按从左至右的顺序依次排放元素。并且因为笔者没有给两个使用绝对定位的元素设置top、right、bottom、left属性，所以布局有种说不上来的诡异。
 
 再说何为定位祖先元素：比如相对定位的元素中是相对于在常规流中的位置进行偏移定位，top、right、bottom、left属性的参考系是元素在常规流中的位置，而在绝对定位的元素中的参考系就是定位祖先元素。拥有相对定位属性值的祖先元素可以充当拥有绝对定位属性值的子孙元素的定位祖先元素。如果子孙元素没有定位祖先元素，会一直回溯到body元素，使用body元素充当自己的定位祖先元素。
@@ -331,7 +331,7 @@ absolute（绝对定位）与relative（相对定位）之间的区别是：rela
 </html>
 ```
 相对定位元素充当绝对定位元素的定位祖先元素实现垂直水平居中的示例效果图：
-1[8](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105553.png)
+1[8](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105553.png?raw=true)
 红色盒子（绝对定位元素）在其定位祖先元素黄色盒子（相对定位元素）中垂直水平居中。
 
 body充当绝对定位元素的定位祖先元素实现垂直水平居中的示例html：
@@ -363,7 +363,7 @@ body充当绝对定位元素的定位祖先元素实现垂直水平居中的示�
 </html>
 ```
 body充当绝对定位元素的定位祖先元素实现垂直水平居中的示例效果图：
-![](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105654.png)
+![](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105654.png?raw=true)
 红色盒子（绝对定位元素）在其定位祖先元素body中垂直水平居中。
 
 
@@ -400,7 +400,7 @@ fixed（固定定位）和absolute（绝对定位）很像，但也有两点不�
 </html>
 ```
 固定定位实现垂直水平居中的示例效果图：
-![](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105754.png)
+![](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105754.png?raw=true)
 尽管上下滑动，却不会影响到红色盒子（固定定位元素）在视窗中垂直水平居中。
 
 相对定位元素企图充当固定定位元素的定位祖先元素实现垂直水平居中的示例html代码：
@@ -441,7 +441,7 @@ fixed（固定定位）和absolute（绝对定位）很像，但也有两点不�
 </html>
 ```
 相对定位元素企图充当固定定位元素的定位祖先元素实现垂直水平居中的示例效果图：
-![](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 105911.png)
+![](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20105911.png?raw=true)
 相对定位元素并不能作为固定定位元素的参照物。
 
 
@@ -492,7 +492,7 @@ sticky（粘性定位）类似relative和fixed的结合，当元素设置positio
 </html>
 ```
 粘性定位的示例效果图：
-![](D:\桌面\学习记录\CSS学习\屏幕截图 2023-11-24 110016.png)
+![](https://github.com/know-ovo/Tesks/blob/main/CSS%E5%AD%A6%E4%B9%A0/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-11-24%20110016.png?raw=true)
 在上下滚动视窗时，设置了粘性定位的黑色盒子会随着视窗一起滚动，直到触发条件top:100px，便“粘住”在距离窗口顶部100像素的位置上。
 
 不过这里有两点需要注意：
